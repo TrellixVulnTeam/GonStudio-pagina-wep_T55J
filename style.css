@@ -35,7 +35,20 @@ nav{
 }
 
 .menu li a:hover{
-    color: #c0c3c4
+    color: #c0c3c4;
+    transition: all 2s;
+    font-size: 1.3rem;
+}
+
+@keyframes titulo {
+    
+    0%{ 
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
 }
 
 .title{
@@ -43,6 +56,9 @@ nav{
     grid-row: 2/3;
     justify-self: center;
     padding-top: 1.2rem;
+    animation-duration: 5s;
+    animation-name: titulo;
+    animation-delay: 0s;
 }
 
 .title h1{
@@ -64,6 +80,7 @@ nav{
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(4,auto);
     padding-top: 3rem;
+    background-image: linear-gradient(to top, #636262, rgb(123, 126, 126));
 }
 
 .imgBanner{
@@ -117,7 +134,7 @@ nav{
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: 1fr;
     padding-top: 3rem;
-    /*background-color: #444444;*/
+    background-color: #636262;
 }
 
 .imagPie{
@@ -177,17 +194,19 @@ nav{
     display: grid;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(6, 10rem);
+    background-image: linear-gradient(to top, #636262, rgb(123, 126, 126));
 }
 
 .galeria{
     grid-column: 3/11;
-    grid-row: 1/5;
+    grid-row: 2/5;
 }
 
 .imagNosotros{
     display: grid;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(6, auto);
+    background-image: linear-gradient(to top, #636262, rgb(123, 126, 126));
 }
 
 .img{
