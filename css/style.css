@@ -1,0 +1,309 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px; }
+
+a {
+  text-decoration: none; }
+
+header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 7rem 10rem; }
+
+nav {
+  grid-column: 4/ span 6; }
+
+.menu {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  justify-content: space-around; }
+  .menu li {
+    align-self: flex-end;
+    padding-bottom: 1rem; }
+    .menu li a {
+      color: #1a261c; }
+      .menu li a:hover {
+        color: #c0c3c4;
+        transition: all 2s;
+        font-size: 1.3rem; }
+
+@keyframes titulo {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.title {
+  grid-column: 5/9;
+  grid-row: 2/3;
+  justify-self: center;
+  padding-top: 1.2rem;
+  animation-duration: 5s;
+  animation-name: titulo;
+  animation-delay: 0s; }
+  .title h1 {
+    font-size: 3rem; }
+    .title h1 span {
+      font-weight: 100; }
+  .title h2 {
+    font-weight: 100;
+    font-size: 1.5rem;
+    text-align: center; }
+
+.banner {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, auto);
+  padding-top: 3rem;
+  background-image: linear-gradient(to top, #636262, #7b7e7e); }
+
+.imgBanner {
+  grid-row: 1/5;
+  grid-column: 3/8; }
+  .imgBanner img {
+    width: 100%; }
+
+.infoBanner {
+  grid-column: 8/11;
+  grid-row: 1/5;
+  background-color: #a4b8bf;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
+.infoSub {
+  font-size: 1.5rem; }
+  .infoSub h2 {
+    color: white;
+    padding-left: 10%;
+    line-height: 0.9; }
+    .infoSub h2 span {
+      color: #4f4f4f;
+      font-weight: 300;
+      font-size: 1.2em; }
+
+.listaBanner {
+  position: relative;
+  left: 10%;
+  max-width: 70%; }
+  .listaBanner ul {
+    color: white;
+    list-style: "-";
+    font: size 0.8rem; }
+
+.Pie {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  padding-top: 3rem;
+  background-color: #636262; }
+
+.imagPie {
+  grid-row: 1/3;
+  grid-column: 2/6; }
+
+.textPie {
+  grid-column: 6/9;
+  text-align: center;
+  padding-top: 3rem; }
+
+.videoBanner {
+  grid-row: 1/5;
+  grid-column: 3/8; }
+
+.infoVideo {
+  grid-column: 8/11;
+  grid-row: 1/7;
+  background-color: #a4b8bf;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
+.videoBanner iframe {
+  width: 100%; }
+
+.listaVideo {
+  position: relative;
+  left: 10%;
+  max-width: 70%; }
+  .listaVideo ul {
+    color: white;
+    list-style: "-";
+    font-size: 0.9rem; }
+
+.formulario {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  grid-row: 1/5;
+  grid-column: 6/8;
+  background-color: #bbccd1; }
+
+.banner_formulario {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, auto);
+  background-image: linear-gradient(to top, #636262, #7b7e7e); }
+
+.formulario ul {
+  color: white;
+  list-style: none;
+  font-size: 1rem; }
+
+.imagGaleria {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 10rem);
+  background-image: linear-gradient(to top, #636262, #7b7e7e); }
+
+.galeria {
+  grid-column: 3/11;
+  grid-row: 1/7;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: #999a9b; }
+
+.imagNosotros {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, auto);
+  background-image: linear-gradient(to top, #636262, #7b7e7e); }
+
+.img {
+  grid-column: 2/12;
+  grid-row: 1/5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.textNosotros {
+  grid-column: 3/11;
+  grid-row: 5/6; }
+  .textNosotros ul {
+    color: white;
+    list-style: "-"; }
+
+@media screen and (max-width: 1200px) {
+  .imagLogo {
+    grid-column: 9/12;
+    grid-row: 2/3; }
+  .textPie {
+    grid-column: 5/12;
+    grid-row: 2/3;
+    text-align: start;
+    padding-top: 5rem; }
+  .galeria {
+    grid-column: 5/9;
+    grid-row: 1/8; } }
+
+@media screen and (max-width: 600px) {
+  header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 7rem 7rem; }
+  nav {
+    grid-column: 1/ span 12; }
+  .infoBanner {
+    grid-column: 8/11;
+    grid-row: 1/5;
+    background-color: #a4b8bf;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+  .infoSub h2 {
+    color: white;
+    padding-left: 10%;
+    line-height: 0.9;
+    font-size: 1.5rem; }
+    .infoSub h2 span {
+      color: #4f4f4f;
+      font-weight: 300;
+      font-size: 1.2em; }
+  .listaBanner {
+    position: relative;
+    left: 10%;
+    max-width: 70%;
+    font-size: .8rem; }
+    .listaBanner ul {
+      color: white;
+      list-style: "-";
+      font: size 0.8rem; }
+  .textPie {
+    grid-column: 5/12;
+    grid-row: 1/3;
+    text-align: start;
+    padding-top: 5rem; }
+  .imagLogo {
+    grid-column: 5/10;
+    grid-row: 3/3; }
+  .videoBanner {
+    grid-row: 1/5;
+    grid-column: 2/12; }
+  .infoVideo {
+    grid-column: 2/12;
+    grid-row: 5/5; }
+  .galeria {
+    grid-column: 3/11;
+    grid-row: 1/8; }
+  .textNosotros {
+    display: none; }
+  .img {
+    grid-column: 4/10;
+    grid-row: 1/5; } }
+
+@media screen and (max-width: 320px) {
+  header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 7rem 7rem; }
+  nav {
+    grid-column: 1/ span 12; }
+  .menu {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    justify-content: space-around; }
+  .banner {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    padding-top: 3rem; }
+  .imgBanner {
+    grid-row: 1/5;
+    grid-column: 2/12; }
+  .infoBanner {
+    display: none; }
+  .textPie {
+    grid-column: 6/12;
+    text-align: center;
+    padding-top: 5rem; }
+  .imagLogo {
+    grid-column: 3/10;
+    grid-row: 3/3; }
+  .infoVideo {
+    display: none; }
+  .videoBanner {
+    grid-row: 1/5;
+    grid-column: 2/12; }
+  .listaVideo {
+    display: none; }
+  .galeria {
+    grid-column: 1/13;
+    grid-row: 1/10; }
+  .imagNosotros {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, auto); }
+  .img {
+    grid-column: 2/12;
+    grid-row: 1/5; }
+  .textNosotros {
+    display: none; } }
