@@ -229,6 +229,43 @@ nav{
     }
 }
 
+
+/* Maps */
+
+$redes:(twitter: #55acee, facebook:#ea5795, sendmail:#c25e30);
+$colores:(color1:#333333, color2:#666666, color3:#999999);
+
+@each $clave, $valor in $redes {
+
+    .btn-#{$clave} {
+        background-color: $valor;
+    }
+
+}
+
+@each $clave2, $valor2 in $colores {
+
+    .#{$clave2} {
+        color:$valor2;
+    }
+}
+
+/*extend */
+
+.red_social {
+    border:1px solid #333333;
+    background-color: #cccccc;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.red_social--nueva {
+    @extend .red_social;
+    border-width: 3px;
+    font-size: 24px;
+}
+
 @media screen and (max-width: 1200px){
 
     .imagLogo{

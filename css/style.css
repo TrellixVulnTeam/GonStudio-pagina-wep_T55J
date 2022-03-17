@@ -190,6 +190,37 @@ nav {
     color: white;
     list-style: "-"; }
 
+/* Maps */
+.btn-twitter {
+  background-color: #55acee; }
+
+.btn-facebook {
+  background-color: #ea5795; }
+
+.btn-sendmail {
+  background-color: #c25e30; }
+
+.color1 {
+  color: #333333; }
+
+.color2 {
+  color: #666666; }
+
+.color3 {
+  color: #999999; }
+
+/*extend */
+.red_social, .red_social--nueva {
+  border: 1px solid #333333;
+  background-color: #cccccc;
+  padding: 20px;
+  font-size: 22px;
+  font-weight: bold; }
+
+.red_social--nueva {
+  border-width: 3px;
+  font-size: 24px; }
+
 @media screen and (max-width: 1200px) {
   .imagLogo {
     grid-column: 9/12;
