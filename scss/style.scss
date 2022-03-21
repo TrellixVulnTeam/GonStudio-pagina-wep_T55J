@@ -266,6 +266,27 @@ $colores:(color1:#333333, color2:#666666, color3:#999999);
     font-size: 24px;
 }
 
+/*mixin*/
+
+@mixin cuadrado ($fondo, $ancho:200px){
+    background-color: $fondo;
+    width: $ancho;
+    height: 200px;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.cuadrado-1{
+    @include cuadrado(#111, 300px);
+}
+
+.cuadrado-2{
+    @include cuadrado(#222, 200px);
+}
+
+.cuadrado-3{
+    @include cuadrado(#333, 100px);
+}
 @media screen and (max-width: 1200px){
 
     .imagLogo{
