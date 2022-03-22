@@ -209,6 +209,36 @@ nav {
 .color3 {
   color: #999999; }
 
+.mas {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 10rem);
+  background-image: linear-gradient(to top, #636262, #7b7e7e); }
+  .mas .cuadrado-1 {
+    grid-column: 4/8;
+    grid-row: 1/5; }
+  .mas .cuadrado-2 {
+    grid-column: 4/8;
+    grid-row: 2/5; }
+  .mas .cuadrado-3 {
+    grid-column: 4/8;
+    grid-row: 3/5; }
+  .mas .cuadrado-4 {
+    grid-column: 8/11;
+    grid-row: 1/5; }
+  .mas .cuadrado-5 {
+    grid-column: 8/11;
+    grid-row: 2/5; }
+  .mas .cuadrado-6 {
+    grid-column: 8/11;
+    grid-row: 3/5; }
+  .mas .red_social, .mas .red_social--nueva {
+    grid-column: 2/12;
+    grid-row: 5/5; }
+  .mas .red_social--nueva {
+    grid-column: 2/12;
+    grid-row: 6/6; }
+
 /*extend */
 .red_social, .red_social--nueva {
   border: 1px solid #333333;
@@ -239,6 +269,27 @@ nav {
 .cuadrado-3 {
   background-color: #333;
   width: 100px;
+  height: 200px;
+  margin-top: 5px;
+  padding: 10px; }
+
+.cuadrado-4 {
+  background-color: #333;
+  width: 100px;
+  height: 200px;
+  margin-top: 5px;
+  padding: 10px; }
+
+.cuadrado-5 {
+  background-color: #222;
+  width: 200px;
+  height: 200px;
+  margin-top: 5px;
+  padding: 10px; }
+
+.cuadrado-6 {
+  background-color: #111;
+  width: 300px;
   height: 200px;
   margin-top: 5px;
   padding: 10px; }

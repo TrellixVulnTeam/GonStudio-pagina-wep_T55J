@@ -250,6 +250,45 @@ $colores:(color1:#333333, color2:#666666, color3:#999999);
     }
 }
 
+.mas{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(6, 10rem);
+    background-image: linear-gradient(to top, #636262, rgb(123, 126, 126));
+    .cuadrado-1{
+        grid-column: 4/8;
+        grid-row: 1/5;
+    }
+    .cuadrado-2{
+        grid-column: 4/8;
+        grid-row: 2/5;
+    }
+    .cuadrado-3{
+        grid-column: 4/8;
+        grid-row: 3/5;
+    }
+    .cuadrado-4{
+        grid-column: 8/11;
+        grid-row: 1/5;
+    }
+    .cuadrado-5{
+        grid-column: 8/11;
+        grid-row: 2/5;
+    }
+    .cuadrado-6{
+        grid-column: 8/11;
+        grid-row: 3/5;
+    }
+    .red_social{
+        grid-column: 2/12;
+        grid-row: 5/5;
+    }
+    .red_social--nueva{
+        grid-column: 2/12;
+        grid-row: 6/6;
+    }
+}
+
 /*extend */
 
 .red_social {
@@ -287,6 +326,20 @@ $colores:(color1:#333333, color2:#666666, color3:#999999);
 .cuadrado-3{
     @include cuadrado(#333, 100px);
 }
+
+.cuadrado-4{
+    @include cuadrado(#333, 100px);
+}
+
+.cuadrado-5{
+    @include cuadrado(#222, 200px);
+}
+
+.cuadrado-6{
+    @include cuadrado(#111, 300px);
+}
+
+
 @media screen and (max-width: 1200px){
 
     .imagLogo{
